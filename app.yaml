@@ -1,6 +1,0 @@
-runtime: python38
-entrypoint: python main.py  # Replace 'app.py' with the entry point of your application
-
-handlers:
-- url: /.*
-  script: auto
