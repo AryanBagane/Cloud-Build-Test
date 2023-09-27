@@ -1,2 +1,2 @@
-def function_1(request):
+def function_2(request):
     return "Hello, World!"
