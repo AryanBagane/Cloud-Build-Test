@@ -5,3 +5,8 @@ steps:
   - name: 'python:3.8'
     entrypoint: 'python'
     args: ['main.py']
+
+options:
+  logging: CLOUD_LOGGING_ONLY  # or NONE if you don't want Cloud Logging
+  logsBucket: logs_bucket  # Specify your Cloud Storage bucket name if using Cloud Logging
+
