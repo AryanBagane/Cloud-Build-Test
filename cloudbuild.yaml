@@ -8,5 +8,5 @@ steps:
 
 options:
   logging: CLOUD_LOGGING_ONLY  # or NONE if you don't want Cloud Logging
-  logsBucket: logs_bucket  # Specify your Cloud Storage bucket name if using Cloud Logging
+  logsBucket: cloud_build_buck  # Specify your Cloud Storage bucket name if using Cloud Logging
 
