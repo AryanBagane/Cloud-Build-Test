@@ -6,14 +6,16 @@ steps:
     entrypoint: 'python'
     args: ['main.py']
 
-options:
-  logging: CLOUD_LOGGING_ONLY  # or NONE if you don't want Cloud Logging
-  # logsBucket: cloud_build_buck  # Specify your Cloud Storage bucket name if using Cloud Logging
-
-# Deployment step for Google App Engine
+    # Deployment step for Google App Engine
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - 'app'
       - 'deploy'
       - 'app.yaml'  # Replace with the path to your App Engine configuration file
     timeout: '300s'  # Adjust the timeout as needed
+
+
+options:
+  logging: CLOUD_LOGGING_ONLY  # or NONE if you don't want Cloud Logging
+  # logsBucket: cloud_build_buck  # Specify your Cloud Storage bucket name if using Cloud Logging
+
