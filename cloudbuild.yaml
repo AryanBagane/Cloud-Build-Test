@@ -11,7 +11,7 @@ steps:
     args:
       - 'functions'
       - 'deploy'
-      - 'function-1'  # Replace with the name of your Cloud Function
+      - 'function-2'  # Replace with the name of your Cloud Function
       - '--runtime'
       - 'python38'  # Specify the Python runtime version
       - '--trigger-http'  # Replace with the appropriate trigger type (e.g., '--trigger-topic', '--trigger-bucket', etc.)
