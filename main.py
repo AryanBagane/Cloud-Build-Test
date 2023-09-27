@@ -1,2 +1,2 @@
-def function_2(request):
+def function_1(request):
     print("Aryan Bagane")
